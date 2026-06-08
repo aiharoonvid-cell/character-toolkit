@@ -234,7 +234,7 @@ Contributions are welcome! Please read [CONTRIBUTING.md](./CONTRIBUTING.md) and 
 
 ## Official Website
 
-**Character Toolkit is maintained by [TextTool](https://texttool.online).**
+**Character Toolkit is maintained by [Text Tool](https://texttool.online).**
 
 TextTool provides free online tools for:
 
@@ -248,7 +248,7 @@ TextTool provides free online tools for:
 - Palindrome Checker
 - Anagram Generator
 
-Visit **[https://texttool.online](https://texttool.online)** to use them directly in your browser.
+Visit **[ontools online text tools](https://texttool.online)** to use them directly in your browser.
 
 ## License
 
