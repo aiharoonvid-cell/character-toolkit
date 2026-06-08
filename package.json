@@ -1,0 +1,101 @@
+{
+  "name": "character-toolkit",
+  "version": "1.0.0",
+  "description": "Open-source character, text, string, word analysis and transformation toolkit for JavaScript and TypeScript.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./analysis": {
+      "types": "./dist/analysis/index.d.ts",
+      "import": "./dist/analysis/index.js"
+    },
+    "./transformation": {
+      "types": "./dist/transformation/index.d.ts",
+      "import": "./dist/transformation/index.js"
+    },
+    "./statistics": {
+      "types": "./dist/statistics/index.d.ts",
+      "import": "./dist/statistics/index.js"
+    },
+    "./extraction": {
+      "types": "./dist/extraction/index.d.ts",
+      "import": "./dist/extraction/index.js"
+    },
+    "./encoding": {
+      "types": "./dist/encoding/index.d.ts",
+      "import": "./dist/encoding/index.js"
+    },
+    "./validation": {
+      "types": "./dist/validation/index.d.ts",
+      "import": "./dist/validation/index.js"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "bench": "node --import tsx benchmark/benchmark.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "texttool",
+    "texttool-online",
+    "character-counter",
+    "word-counter",
+    "text-analysis",
+    "text-processing",
+    "string-utils",
+    "character-toolkit",
+    "palindrome",
+    "anagram",
+    "case-converter",
+    "text-transformer",
+    "text-statistics",
+    "typescript",
+    "javascript"
+  ],
+  "author": "TextTool (https://texttool.online)",
+  "license": "MIT",
+  "homepage": "https://texttool.online",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/texttool/character-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/texttool/character-toolkit/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "eslint": "^8.57.0",
+    "tsx": "^4.15.0",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,13 @@
+src/
+tests/
+benchmark/
+examples/
+docs/
+.github/
+*.config.ts
+tsconfig*.json
+.eslintrc.json
+.gitignore
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+SECURITY.md
